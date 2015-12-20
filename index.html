@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <section>
+    <div>
       <table class="links-banner">
         <tr>
           <td><a href="https://www.google.com/?gws_rd=ssl">Portfolio</a></td>
@@ -24,18 +24,16 @@
 
     Don't know if I really need Search or not but, what the heck, thought I'd throw it in there for now.
   -->
-    </section>
+    </div>
     <header>
       
-      <img class="left-header" src="imgs/HConklin_br_20140903.jpg">
-      <h1 class="right-header">Heather Conklin, CFP<sup>(R)</sup></h1>
-      <!--I looked up the hex symbol for the "restricted" sign in the UTF-8 character set (it's c2ae) but I don't know how to insert that here yet. Will just use the (R) for now.
-      -->
+      <img alt="headshot" class="left-header" src="imgs/HConklin_br_20140903.jpg">
+      <h1 class="right-header">Heather Conklin, CFP<sup>&reg;</sup></h1>
       <h2 class="right-header">Web developer: finance-focused applications</h2>
      
     </header>
     <section class="lower-page">
-        <h1 class="subheading">Background and work</h1>
+        <h3 class="subheading">Background and work</h1>
         <p>Personal mission statement</p>
         <p>Experience</p>
         <p>General information</p>
@@ -43,39 +41,35 @@
 
     <!--The next two sections, showing my portfolio and blog archive will be independent, side-by-side lists. 
   -->
-    <section>
-        <h1>Portfolio</h1>
-        <ul>
-          <li><img src="http://www.amusingtime.com/images/09/very-little-monkey-picture.jpg"></li>
-            <ul>
-                <li>Obviously, this is not my work but I don't have any to show yet, so here's a picture of a monkey.</li>
-            </ul>
-          <li><a href="http://www.google.com">Other project</a></li>
-          <li><a href="http://www.google.com">Other project</a></li>
+    <div class="left, my-work">
+        <h3 class="bg-color">Portfolio</h1>
+        <ul class="bg-color">
+          <li class="bg-color"><img alt="very little monkey" src="http://www.amusingtime.com/images/09/very-little-monkey-picture.jpg">
+            <figcaption class="bg-color">Obviously, this is not my work but I don't have any to show yet, so here's a picture of a monkey.</figcaption></li>
+          <li class="bg-color"><a class="bg-color" href="http://www.google.com">Other project</a></li>
+          <li class="bg-color"><a class="bg-color" href="http://www.google.com">Other project</a></li>
         </ul>
         <!-- This section should be scroll-able. It will include a thumbnail of a project with a brief description. The thumbnail image will be a link to that project's page.
 
         I'm not sure I'll leave this as a list or what. Need to go look at some professionals' pages and see how/whether they show thumbnails of past projects...www.awwwards.com/websites/portfolio/ Okay, now my site looks sooooo boring.
       -->
-    </section>
+    </div>
     
-    <section>
-        <h1>Blog Archive</h1>
-        <ul>
-          <li><a href="git.html">Version Control & GitHub</a>: How to screw up everything you've done all week and not even want to kill yourself</li>
-          <li><a href="http://www.google.com">Other blog</a></li>
-          <li><a href="http://www.google.com">Other blog</a></li>
+    <div class="right, my-work">
+        <h3 class="bg-color">Blog Archive</h1>
+        <ul class="bg-color">
+          <li class="bg-color"><a class="bg-color" href="git.html">Version Control & GitHub</a>: How to screw up everything you've done all week and not even want to kill yourself</li>
+          <li class="bg-color"><a class="bg-color" href="http://www.google.com">Other blog</a></li>
+          <li class="bg-color"><a class="bg-color" href="http://www.google.com">Other blog</a></li>
         </ul>
-        <!-- This section should be scroll-able rather than just listing the last three or four posts. Don't know how to do that yet.
-      -->
-    </section>
-    <section>
+        
+    </div>
+    <section class="foot">
       <!--This is meant to be a footer, way at the bottom of the page
     -->
-      <p>
-        Basic contact info
-        <a href="imgs/resume.pdf">Resume</a> Click <a href="http://www.google.com">here</a> to send me an email.
-      </p>
+      <p>Basic contact info</p>
+      <p><a href="imgs/resume.pdf">Resume</a> </p>
+      <p><a href="mailto:heath3conk@gmail.com">Email me</a></p>
     </section>
   </body>
 </html>

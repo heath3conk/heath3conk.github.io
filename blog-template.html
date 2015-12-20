@@ -2,14 +2,15 @@
 <html>
 
   <head>
-    <title>Heather Conklin blog</title>
+    <title>Blog Template</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
   </head>
 
   <body>
     <section>
-      <table>
+      <table class="links-banner">
         <tr>
           <td><a href="https://www.google.com/?gws_rd=ssl">Portfolio</a></td>
           <td><a href="https://www.google.com/?gws_rd=ssl">Blog</a></td>
@@ -19,15 +20,17 @@
         </tr>
       </table>
     </section>
-    <section>
-      <h1>Heather Conklin, CFP</h1>
+   
+    <header>
+      <h1>Heather Conklin, CFP<sup>&reg;</sup></h1>
       <h2>Web developer: finance-focused applications</h2>
-    </section>
-    <section>
+    </header>
+
+    <div class="blog-right">
       
         <h2>Blog Archive</h2>
         <ul>
-          <li><a href="http://www.google.com">November's blog</a></li>
+          <li><a href="blog/git.html">Version Control & GitHub</a></li>
           <li><a href="http://www.google.com">October's blog</a></li>
           <li><a href="http://www.google.com">September's blog</a></li>
         </ul>
@@ -41,11 +44,13 @@
         to differentiate it from the main content of this page.
       -->
      
-    </section>
-    <section>
+    </div>
+    
+    <div class="blog-left">
       
         <h2>BLOG POST TITLE</h2>
-        <h3>blog date</h3>
+        <h3>subtitle</h3>
+        <h4>Date</h4>
         <p>
            Blog content ...Blog content ...Blog content ...Blog content ...
         </p>
@@ -53,12 +58,14 @@
         margin about two-thirds of the way across, where the sidebar div sits.
       -->
       
-    </section>
-    <section>
-      <p>
-        Basic contact info
-        <a href="imgs/resume.pdf">Resume</a> Click <a href="http://www.google.com">here</a> to send me an email.
-      </p>
+    </div>
+
+    <section class="foot">
+      <!--This is meant to be a footer, way at the bottom of the page
+    -->
+      <p>Basic contact info</p>
+      <p><a href="imgs/resume.pdf">Resume</a> </p>
+      <p><a href="mailto:heath3conk@gmail.com">Email me</a></p>
     </section>
   
     <section>
