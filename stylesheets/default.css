@@ -1,0 +1,97 @@
+ 
+* {
+/*	set background-color to one of the ones on the mood board (went with the second set of colors on the mood board)
+	set default font to one of the ones on the mood board (are none of these fonts available in my browser?!?)
+	*/
+	background-color: #746EB2;
+	font-family: Source Sans Pro, sans-serif;
+}
+
+
+.links-banner {
+	width: 100%;
+	background-color: #52B244;
+	color: #ffB688;
+}
+
+td > a { 
+/*	set links in table (top of page) so they sit side-by-side
+	collectively take up the width of the page
+	have a different background color than the rest of the page
+	change color and/or size when hovered over
+	*/
+	text-decoration: none;
+}
+
+a.hover {
+	color: #FFB688;
+/*	Not sure why this isn't working on any of my links?!? */
+}
+
+header {
+	margin-top: 20px;
+/*	Setting a bottom margin here seemed less than ideal, I think because the image was longer than the margin I set.
+	It seemed to make more sense to set a top padding on the section below. Since that section will "clear" both 
+	the headshot and the text next to the image, its padding will gurantee good spacing.*/
+}
+.left-header {
+/* 	move picture on home page to left side
+	float(?) next to name & some text
+	resize picture 
+	affects index.html, not blog/index.html */
+	float: left;
+	width: 225px;
+	height: 337px;
+/*	according to Duckett's book, I should resize this image to 225px x 337px rather than forcing it into the shape I
+	want. I will go back & do that if I have time this week. Otherwise, will leave it for a future version */
+	margin: 0px 20px 0px 20px;
+	}
+
+.right-header {
+/* 	move text on home page to right side
+	float next to picture 
+	affects index.html, not blog/index.html */
+	float: right;
+	width: 85%;
+	text-align: left;
+}
+
+h1 sup {
+	font-size: .5em;
+}
+
+header h2 {
+	color: white;
+	font-style: italic;
+}
+
+.lower-page {
+	clear: both;
+	/*affects home page: moves stuff below headshot & name*/
+	padding-top: 20px;
+}
+
+.subheading {
+/*	set up smaller font size for <h1> tags in subsections
+	affects index.html
+*/
+	font-size: 1em;
+}
+
+.left {
+/* 	create a float property for the content at the bottom of the home page
+	portfolio should take up half the screen and sit next to blog index
+	set background-color to one of the completmentary colors from mood board
+	set border to another complementary color
+	affects index.html, not blog */
+	background-color: #FFB688;
+}
+
+.right {
+/* 	create a float property for the content at the bottom of the home page
+	portfolio should take up half the screen and sit next to blog index
+	set background-color to one of the completmentary colors from mood board
+	set border to another complementary color
+	affects index.html, not blog */
+	background-color: #FFB688;
+}
