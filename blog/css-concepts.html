@@ -2,10 +2,11 @@
 <html>
 
   <head>
-    <title>Version Control & GitHub</title>
+    <title>CSS Blog</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-2.css">
   </head>
 
   <body>
@@ -49,37 +50,49 @@
     
     <div class="blog-left">
       
-        <h2>Week One Blog Post: Version Control & GitHub</h2>
-        <h3>How to screw up everything you've done all week and not even want to kill yourself</h3>
-        <h4>December 4, 2015</h4>
-        <p>
-           So, since I'm pretty new to this coding thing, I was really happy that this week's challenges were basically about making me feel like I could jump in and hack away without worrying that I might break the whole internet.
-    </p>
-    <p>
-      The whole idea of version control gives me a lovely sense of security. I can work at something until I get it functioning the way I want it to, save it in that state, and then keep fiddling with it knowing that if my later work introduces errors, I can always go back to that earlier, WORKING version, and start fresh. Also, starting fresh might actually be my last resort since I'll be able to see exactly what I've changed between that older version and the newer, buggy one.         
-    </p>
-    <p>
-      I'm thinking of this as putting a copy of the work up on a high shelf somewhere (that's the commit and push to GitHub) and then pulling a ghost copy of it off that shelf to work on. I can do what I want with the ghost copy (my new branch) without having any impact on the master up there on the shelf until I decide I'm ready to merge the two.
-    </p>
-    <p>
-      Git lets me create that ghost copy by making a new branch, which is just a exact duplicate of the original work (the master), then I can add directories and/or files, make changes to the what was already there or whatever. I save those changes locally and get them ready to save copy to the master copy out in the cloud on GitHub.
-    </p>
-    <p>
-      There's a multi-step process to get from two versions of the work back to one. First I have to use git add to "stage" my changes. Entering git status lets me see a list of the things that are ready to go. Once I'm satisfied that I've got them all, enter git commit -m "commit message" to save the lot of them.
-    </p>
-    <p>
-      At this point, I've saved changes locally but not back up to GitHub, where my full working copy lives. Now I have to git push origin branch_name to make that happen. (Note to self: remember the name of the branch you created! It was a while ago so make that name something logical or bloody write it down!)
-    </p>
-    <p>
-      I should be able to see my new branch on GitHub available to pull. I can create a new pull request, compare my updated work to the master and merge the two back into one, updated version. Storing my code on GitHub allows others to view it and even edit it and also ensures that there's a clean copy of it, including a record of past changes, somewhere other than my own hard drive. 
-    </p>
-    <p>
-      Ahhh, peace of mind. :)
-        </p>
-        <!-- This is the main conent of the page. It should cover the area from the left
-        margin about two-thirds of the way across, where the sidebar div sits.
-      -->
-      
+        <h2>CSS: Margins, Borders & Padding</h2>
+        <h3>How to make your stuff pretty</h3>
+        <h4>December 21, 2015</h4>
+        
+        <div class="div-height">
+        	<img class="right-img" alt="picture with margins, borders & padding" src="../imgs/margins-and-padding.jpg">
+        	
+        	<p>
+          	 Here is an image of the pictures on my living room wall. When you look at this, you'll notice the green wall between the pictures (that's the margin), the brown wood of the frames (the border) and the cream-colored mat between the picture and the frame (that's padding). 
+       		</p>
+       		
+       		<p>
+          	 This is the easiest way I can think about these elements, <span class="bold">margins, padding and borders.</span> It's lucky for me that I've been an amateur photographer for decades so I not only took these pictures, I choose their mats and frames and hung them on the wall myself. So the idea setting up elements on a webpage in a way that is easier to read has this great visual analogy ten feet away from where I'm typing this.
+        	</p>
+
+			<p><span class="bold">Margins</span> set the space around the <span class="ital">outside</span> of an element.</p>
+
+      		<p><span class="bold">Borders</span> go around the <span class="ital">edges</span> of the element.</p>
+      		
+      		<p><span class="bold">Padding</span> is the space <span class="ital">around the contents </span> of your element. For example, you could set padding on a div to give some room around the paragraphs set inside of it.</p>
+      		<p>
+
+      		As with photographs, there are conventions to follow in setting elements on your webpage. Text is generally easier to read if there is some space around it (note also the indentation best-practices for coding). User experience will be more pleasant if images and other blocks of stuff are not just piled on the screen without any gaps.       			
+      		</p> 		
+
+      		<img class="left-img" alt="grandma in uniform" src="../imgs/grandma.jpg">
+      		<p>
+      		Also, as with photographs, I imagine there are exceptions to those conventions. 
+      		</p>
+
+      		<p>
+      		This is a picture of my grandmother in her Coast Guard uniform during World War II. There's a frame but no padding (matting) and this one doesn't hang on the wall, it sits on my bookshelf. You'll often see family photos, especially candid shots, displayed displayed this way; it's a lot less formal. 
+      		</p>
+      		<p>
+      		The only similar idea I can think of in terms of web design would be a page that's <span class="ital">intended</span> to create an emotional reaction in the viewer. Something like the image below. This picture has a lot going on. There are elements stacked on top of one another and some run out of their frame and onto the background. But it doesn't look terrible. It's exciting and draws you in to the content...which appears to be in French so I have no idea what they're doing (I <span class="bold">know</span> I can translate it; I just haven't found the actual page yet, only this image of it!)
+      		</p>
+      		
+      		<img class="right-img" alt="image of busy webpage" src="https://cdn.idevie.com/wp-content/uploads/2014/01/7aa72_tutorials_toucouleure_artistic_websites.jpg">
+
+      		<p>
+      		To summarize: it's a good idea to have space around the content of your webpages. In general, it'll look cleaner and it will be easier to read and understand. If you deviate from these best-practices, do it on purpose.
+      		</p>
+
     </div>
 
     <section class="foot">

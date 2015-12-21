@@ -115,3 +115,11 @@ header h2 {
 	border-top: 3px #436d7f solid;
 	text-align: center;
 }
+
+.ital {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
+}
