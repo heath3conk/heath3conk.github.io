@@ -1,0 +1,14 @@
+.left-img {
+	float:left;
+	padding: 20px;
+}
+
+.right-img{
+	float: right;
+	padding: 20px;
+}
+
+
+.div-height {
+	height: 350px;
+}
