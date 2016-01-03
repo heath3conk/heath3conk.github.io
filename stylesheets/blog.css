@@ -79,3 +79,11 @@ main h3 {
 .archive-list {
 	height: 500px;
 }
+
+.code_snippet {
+	color: maroon;
+	font-style: bold;
+	display: block;
+	padding: 5px 30px;
+	font-family: Arial;
+}

@@ -52,9 +52,70 @@
         </p>
 
         <p>
-          As you go down into 
+          As you go down into smaller and smaller environments - from a condo to a computer to a Ruby program that's supposed to get something done - the need to keep things in some kind of logical order doesn't go away. With code, you've got several ways to get that done. 
         </p>
-      
+
+        <p>
+          You might need to have a single piece of information that you'll use in some way (or several ways). For that, you'd probably have a variable set to a single value. For example, maybe you'd have a variable called <span class="ital">first_name</span>. You might have a simple bit of code that asks the user to input their name and you'd store their input in that variable. 
+        </p>
+
+        <p>
+          Then, suppose you wanted to keep track of everyone who uses your simple bit of code. You'd want to collect their <span class="ital">first_name</span> entries into a list you could go back to at a later time. An <span class="bold">array</span> is ideal for this purpose. Arrays are just collections of data. In this example, not only would your array maintain a list of users' names, it would also be able to show you the order in which they answered your question. That's because arrays are <span class="ital">ordered</span> lists. Every element in an array has a specific position, or <span class="ital">index.</span> The index of a given name would indicate whether that person used your <span class="ital">name_grabber</span> before or after someone else. 
+        </p>
+
+        <p>
+          After a few people have come by, your array might look like this:
+          <span class="code_snippet">
+          visitors = ["Heather", "Will", "Cathleen"]
+          </span>
+        </p>
+
+        <p>
+          Suppose though that you wanted more information than just the user's name? Maybe you want their <span class="ital">last_name</span> and <span class="ital">birthday</span> too. A <span class="bold">hash</span> could keep this information for you. A hash differs from an array in that the data in a hash comes in pairs of a <span class="ital">key</span> and a <span class="ital">value.</span>
+        </p>
+
+        <p>
+          A hash for my information would look like this:
+          <span class="code_snippet">
+          {"first_name" => "Heather", "last_name" => "Conklin", "birthday" => "December 16"}</span>
+          The beauty of the hash is that the relationships between the data points is so obvious. Clearly, my birthday is December 16. If the key <span class="ital">birthday</span> weren't right there, you might wonder what that date was all about. But that's not a problem with hashes. If you were looking at the information my sister input instead of me, the hash would be:
+          <span class="code_snippet">
+          {"first_name" => "Cathleen", "last_name" => "Feduke", "birthday" => "May 7"}
+          </span>
+        </p>
+
+        <p>
+          One important note here, the <span class="ital">keys</span> in a hash are unique. You can't have two <span class="ital">first_name</span> entries in the hash. <span class="ital">Values</span> can repeat though, so if my brother's name were "Will Will," his hash would be: 
+          <span class="code_snippet">
+          {"first_name" => "Will", "last_name" => "Will", "birthday" => "June 1"}
+          </span>
+        </p>
+              
+        <p>
+          Now, here's where it gets really good (for someone like me who kind of wishes she owned a label-maker). Both <span class="bold">arrays</span> and <span class="bold">hashes</span> can hold anything. Strings, integers, <span class="ital">other arrays or hashes</span>, anything, even combinations of different types of things. So, if I wanted to keep track of all the people who've interacted with my <span class="ital">name_grabber</span> code, I might organize it like this:
+         <span class="code_snippet">
+          visitors_hash = [{"first_name" => "Heather", "last_name" => "Conklin", "birthday" => "December 16"}, {"first_name" => "Cathleen", "last_name" => "Feduke", "birthday" => "May 7"}, {"first_name" => "Will", "last_name" => "Will", "birthday" => "June 1"}]
+        </span>
+         Notice the different brackets: arrays use <span class="bold">[]</span> while hashes use <span class="bold">{}</span>.
+        </p>
+
+        <p>
+          That is an array whose elements are hashes! I can iterate over the array to find the hash whose <span class="ital">first_name</span> key holds a value of "Cathleen" and return the value in her <span class="ital">birthday</span> key. Both arrays and hashes have built-in methods for finding information they hold, adding and removing elements, rearranging their contents and otherwise using the data in them (which is really the point).
+        </p>
+        
+        <p>
+          There are circumstances where it's obvious which of these collections is the "best" way to hold your data and others where you could probably use either. I haven't come across that many circumstances up to this point so I don't have a lot of examples to look at. For the moment, I'm thinking of it this way: If I need to emphasize a <span class="bold">relationship</span> between the question I'm asking and the answer I'm getting, then I have a key (the question) and a value (answer) and a hash might be the collection for that task. Otherwise, an array would probably work fine.
+        </p>
+  
+        <p>
+          In this particular example, you might argue that an array of arrays would be equally efficient, since the three pieces of data I want are all the same and show up in the same order each time. If I wanted to, I could create an array of values for each visitor and build up an array made up of other arrays, like this:
+          <span class="code_snippet">
+          visitors_array = [["Heather", "Conklin", "December 16"], ["Cathleen", "Feduke", "May 7"], ["Will", "Will", "June 1"]]
+          </span>
+          Note that the keys are gone as are the "=>" markers. I could still iterate through these arrays, find "Cathleen" and return "May 7" for her birthday, based on that string's position in the array that starts with her name. 
+        </p>
+
+            
     </div>
 
     <section class="foot">
