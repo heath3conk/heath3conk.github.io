@@ -3,7 +3,7 @@
 /*	set background-color to one of the ones on the mood board (went with the fourth set of colors on the mood board)
 	set default font to one of the ones on the mood board (are none of these fonts available in my browser?!?)
 	*/
-	background-color: #6caecc;
+	background-color: #fff9ef;
 	font-family: Source Sans Pro, sans-serif;
 }
 
@@ -14,12 +14,23 @@
 	*/
 .links-banner {
 	width: 100%;
-	background-color: #87daff;
 	color: #black;
+	padding: 3px;
+	background-color: #35557f;
 }
 
-td > a { 
+td {
+	background-color: #35557f;
+}
+
+td > a {
+	color: #68aaff;
+	background-color: #35557f;
+}
+
+a { 
 	text-decoration: none;
+	color: #35557f;
 }
 
 a.hover {
@@ -60,7 +71,7 @@ h1 sup {
 }
 
 header h2 {
-	color: #66777f;
+	color: #35557f;
 	font-style: italic;
 }
 
@@ -85,7 +96,7 @@ header h2 {
 	since most of these elements are the same for both, it seemed more efficient to have one class that applied
 	to both rather than defining all the same things in the .left and .right classes, which really only need to
 	put things in the right spot */
-	background-color: #66777f;
+	background-color: #bfc5cc;
 	border: 2px #436d7f solid;
 	width: 45%;
 	display: inline-block;
@@ -103,7 +114,7 @@ header h2 {
 }
 
 .bg-color {
-	background-color: #66777f;
+	background-color: #bfc5cc;
 	color: ;
 /* 	There has GOT to be a better way to get this color inherited throughout these divs! I don't know how yet
 	and I don't have time to go find out so, for now, I'm throwing this class around like confetti.
@@ -114,6 +125,7 @@ header h2 {
 	clear: both;
 	border-top: 3px #436d7f solid;
 	text-align: center;
+	/*background-color: #35557f;*/
 }
 
 .ital {

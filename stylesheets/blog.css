@@ -14,19 +14,19 @@ header {
 
 .blog-left h2 {
 	font-size: 32px;
-	color: #436d7f;
+	color: #3c5b7f;
 	font-weight: bold;
 }
 
 .blog-left h3 {
 	font-size: 24px;
-	color: #436d7f;
+	color: #3c5b7f;
 	font-style: italic;
 }
 
 .blog-left h4 {
 	font-size: 18px;
-	color: #436d7f;
+	color: #3c5b7f;
 	font-weight: bold;
 }
 
@@ -41,12 +41,12 @@ header {
 .blog-right h2 {
 	font-size: 24px;
 	font-style: italic;
-	color: #436d7f;
+	color: #3c5b7f;
 }
 
 .blog-right a {
 	text-decoration: none;
-	color: #d3f2ff;
+	color: #3c5b7f;
 	font-size: 18px;
 }
 
