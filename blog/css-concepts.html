@@ -13,11 +13,11 @@
     <section>
       <table class="links-banner">
         <tr>
-          <td><a href="https://www.google.com/?gws_rd=ssl">Portfolio</a></td>
+          <td><a href="#">Portfolio</a></td>
           <td><a href="index.html">Blog</a></td>
-          <td><a href="https://www.google.com/?gws_rd=ssl">Links</a></td>
-          <td><a href="https://www.google.com/?gws_rd=ssl">Contact</a></td>
-          <td><a href="https://www.google.com/?gws_rd=ssl">Search</a></td>
+          <td><a href="#">Links</a></td>
+          <td><a href="#">Contact</a></td>
+          <td><a href="../index.html">Home</a></td>
         </tr>
       </table>
     </section>
@@ -29,12 +29,11 @@
 
     <div class="blog-right">
       
-        <h2>Blog Archive</h2>
+        <a href="index.html"><h2>Blog Archive</h2></a>
         <ul>
+          <li><a href="array-hashes.html">Arrays & Hashes</a>: Organization!</li>
           <li><a href="css-concepts.html">CSS: Margins, Borders & Padding</a>: How to make your stuff pretty</li>
-          <li><a href="blog/git.html">Version Control & GitHub</a></li>
-          <li><a href="http://www.google.com">October's blog</a></li>
-          <li><a href="http://www.google.com">September's blog</a></li>
+          <li><a href="git.html">Version Control & GitHub</a>: How to screw up everything you've done all week and not even want to kill yourself</li>
         </ul>
         <!-- This section should be scroll-able rather than just listing the last three
         or four posts. Don't know how to do that yet.
@@ -50,49 +49,56 @@
     
     <div class="blog-left">
       
-        <h2>CSS: Margins, Borders & Padding</h2>
-        <h3>How to make your stuff pretty</h3>
-        <h4>December 21, 2015</h4>
+      <h2>CSS: Margins, Borders & Padding</h2>
+      <h3>How to make your stuff pretty</h3>
+      <h4>December 21, 2015</h4>
         
-        <div class="div-height">
-        	<img class="right-img" alt="picture with margins, borders & padding" src="../imgs/margins-and-padding.jpg">
+      <div class="div-height">
+       	<img class="right-img" alt="picture with margins, borders & padding" src="../imgs/margins-and-padding.jpg">
         	
-        	<p>
-          	 Here is an image of the pictures on my living room wall. When you look at this, you'll notice the green wall between the pictures (that's the margin), the brown wood of the frames (the border) and the cream-colored mat between the picture and the frame (that's padding). 
-       		</p>
+       	<p>
+         	 Here is an image of the pictures on my living room wall. When you look at this, you'll notice the green wall between the pictures (that's the margin), the brown wood of the frames (the border) and the cream-colored mat between the picture and the frame (that's padding). 
+      	</p>
        		
-       		<p>
-          	 This is the easiest way I can think about these elements, <span class="bold">margins, padding and borders.</span> It's lucky for me that I've been an amateur photographer for decades so I not only took these pictures, I choose their mats and frames and hung them on the wall myself. So the idea setting up elements on a webpage in a way that is easier to read has this great visual analogy ten feet away from where I'm typing this.
-        	</p>
+      	<p>
+        	 This is the easiest way I can think about these elements, <span class="bold">margins, padding and borders.</span> It's lucky for me that I've been an amateur photographer for decades so I not only took these pictures, I choose their mats and frames and hung them on the wall myself. So the idea setting up elements on a webpage in a way that is easier to read has this great visual analogy ten feet away from where I'm typing this.
+       	</p>
 
-			<p><span class="bold">Margins</span> set the space around the <span class="ital">outside</span> of an element.</p>
+			   <p>
+           <span class="bold">Margins</span> set the space around the <span class="ital">outside</span> of an element.
+        </p>
 
-      		<p><span class="bold">Borders</span> go around the <span class="ital">edges</span> of the element.</p>
+      	<p>
+           <span class="bold">Borders</span> go around the <span class="ital">edges</span> of the element.
+        </p>
       		
-      		<p><span class="bold">Padding</span> is the space <span class="ital">around the contents </span> of your element. For example, you could set padding on a div to give some room around the paragraphs set inside of it.</p>
+      	<p>
+           <span class="bold">Padding</span> is the space <span class="ital">around the contents </span> of your element. For example, you could set padding on a div to give some room around the paragraphs set inside of it.
+        </p>
       		
-      		<p>
-      		As with photographs, there are conventions to follow in setting elements on your webpage. Text is generally easier to read if there is some space around it (note also the indentation best-practices for coding). User experience will be more pleasant if images and other blocks of stuff are not just piled on the screen without any gaps.       			
-      		</p> 		
+      	<p>
+      	  As with photographs, there are conventions to follow in setting elements on your webpage. Text is generally easier to read if there is some space around it (note also the indentation best-practices for coding). User experience will be more pleasant if images and other blocks of stuff are not just piled on the screen without any gaps.       			
+      	</p> 		
 
-      		<img class="left-img" alt="grandma in uniform" src="../imgs/grandma.jpg">
-      		<p>
-      		Also, as there are with photographs, I imagine there are exceptions to those conventions. 
-      		</p>
+      	<img class="left-img" alt="grandma in uniform" src="../imgs/grandma.jpg">
+      	<p>
+      	  Also, as there are with photographs, I imagine there are exceptions to those conventions. 
+      	</p>
 
-      		<p>
-      		This is a picture of my grandmother in her Coast Guard uniform during World War II. There's a frame but no padding (matting) and this one doesn't hang on the wall; it sits on my bookshelf. You'll often see family photos, especially candid shots, displayed this way. It's a lot less formal. 
-      		</p>
+      	<p>
+      	  This is a picture of my grandmother in her Coast Guard uniform during World War II. There's a frame but no padding (matting) and this one doesn't hang on the wall; it sits on my bookshelf. You'll often see family photos, especially candid shots, displayed this way. It's a lot less formal. 
+      	</p>
 
-      		<p>
-      		The only similar idea I can think of in terms of web design would be a page that's <span class="ital">intended</span> to create an emotional reaction in the viewer. Something like the image below. This picture has a lot going on. There are elements stacked on top of one another and some run out of their frame and onto the background. But it doesn't look terrible. It's exciting and draws you in to the content...which appears to be in French so I have no idea what they're doing (I <span class="bold">know</span> I can translate it; I just haven't found the actual page yet, only this image of it!)
-      		</p>
+      	<p>
+      	  The only similar idea I can think of in terms of web design would be a page that's <span class="ital">intended</span> to create an emotional reaction in the viewer. Something like the image below. This picture has a lot going on. There are elements stacked on top of one another and some run out of their frame and onto the background. But it doesn't look terrible. It's exciting and draws you in to the content...which appears to be in French so I have no idea what they're doing (I <span class="bold">know</span> I can translate it; I just haven't found the actual page yet, only this image of it!)
+      	</p>
       		
-      		<img class="right-img" alt="image of busy webpage" src="https://cdn.idevie.com/wp-content/uploads/2014/01/7aa72_tutorials_toucouleure_artistic_websites.jpg">
+      	<img class="right-img" alt="image of busy webpage" src="https://cdn.idevie.com/wp-content/uploads/2014/01/7aa72_tutorials_toucouleure_artistic_websites.jpg">
 
-      		<p>
-      		To summarize: it's a good idea to have space around the content of your webpages. In general, it'll look cleaner and it will be easier to read and understand. If you deviate from these best-practices, do it on purpose.
-      		</p>
+      	<p>
+      	  To summarize: it's a good idea to have space around the content of your webpages. In general, it'll look cleaner and it will be easier to read and understand. If you deviate from these best-practices, do it on purpose.
+      	</p>
+      </div>
 
     </div>
 
@@ -100,26 +106,10 @@
       <!--This is meant to be a footer, way at the bottom of the page
     -->
       <p>Basic contact info</p>
-      <p><a href="imgs/resume.pdf">Resume</a> </p>
+      <p><a href="../imgs/resume.pdf">Resume</a> </p>
       <p><a href="mailto:heath3conk@gmail.com">Email me</a></p>
     </section>
   
-    <section>
-      <p><a href="imgs/wireframe-blogs.pdf">This</a> is what my wireframe looks like.</p>
-    </section>
-      <!--
-      How was it to wireframe and create an HTML page with a pair?
-      I enjoyed this challenge. It was nice to see what my pair had created for his wireframe, which was very similar to my own. I liked the process of writing HTML together on JSFiddle since it gave us two sets of eyes on the code to make sure we weren't leaving out tags or whatever.
-
-      Did you find wireframing to be helpful to your development process?
-      I did find it helpful, pretty much like outlining a paper to be written. 
-
-      What did you and your pair decide made a good wireframe? 
-      We talked about using HTML tags in a way that their role on the page is clear, referencing the semantics articles we've been reading. We were trying to dilineate the sections so that it would be clear that they were different things. We tried to use <div> tags to create a "sidebar" and "content" areas on the page but we couldn't figure out quite how to display them the way we wanted to. The idea is there so we can go in and add CSS elements later. I put notes in those spots so I would remember what I wanted to do once I have more skills.
-      
-      What new semantic elements did you learn about (if any)?
-      We used <section> tags here, which we hadn't earlier. Tried to use <div> tags but, since I don't know how to put one <div> on the right side of the page and another <div> parallel on the left side, my content just overlapped. The references I consulted to see about using columns or grids suggested these were CSS tools so I stayed away. Looking forward to learning how to do that!
-      
-    -->
+   
   </body>
 </html>
