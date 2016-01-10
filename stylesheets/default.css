@@ -14,8 +14,20 @@
 	*/
 .links-banner {
 	width: 100%;
-	color: #black;
-	padding: 3px;
+	color: #68aaff;
+	padding: 4px;
+	background-color: #35557f;
+	text-align: right;
+}
+
+.banner-element {
+	background-color: #35557f;
+	color: #68aaff;
+	font-size: 30px;
+	padding-right: 25px;
+}
+
+.banner-background {
 	background-color: #35557f;
 }
 
