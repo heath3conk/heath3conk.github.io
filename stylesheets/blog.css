@@ -6,7 +6,7 @@ header {
 .blog-left {
 	height: 600px;
 	float: left;
-	width: 65%;
+	width: 60%;
 	padding: 10px 25px 0px 20px;
 	border-right: 3px #436d7f double;
 	overflow: scroll;
@@ -36,6 +36,7 @@ header {
 	width: 30%;
 	padding: 10px 20px 0px 10px;
 	overflow: scroll;
+	text-align: left;
 }
 
 .blog-right h2 {
