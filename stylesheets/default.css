@@ -27,18 +27,10 @@
 	padding-right: 25px;
 }
 
-.banner-background {
+.banner-logo-link {
 	background-color: #35557f;
 }
 
-td {
-	background-color: #35557f;
-}
-
-td > a {
-	color: #68aaff;
-	background-color: #35557f;
-}
 
 a { 
 	text-decoration: none;
@@ -78,7 +70,7 @@ header {
 	text-align: left;
 }
 
-h1 sup {
+sup {
 	font-size: .5em;
 }
 
@@ -90,7 +82,7 @@ header h2 {
 .lower-page {
 	clear: both;
 	/*affects home page: moves stuff below headshot & name*/
-	margin: 10px 0px 10px 0px;
+	margin: 10px;
 	padding: 20px;
 	border-top: 3px #436d7f solid;
 	border-bottom: 3px #436d7f solid;
@@ -110,9 +102,9 @@ header h2 {
 	put things in the right spot */
 	background-color: #bfc5cc;
 	border: 2px #436d7f solid;
-	width: 45%;
+	width: 40%;
 	display: inline-block;
-	padding: 10px;
+	padding: 20px;
 	overflow: scroll;
 	height: 400px;
 	margin: 20px;
@@ -127,10 +119,14 @@ header h2 {
 
 .bg-color {
 	background-color: #bfc5cc;
-	color: ;
 /* 	There has GOT to be a better way to get this color inherited throughout these divs! I don't know how yet
 	and I don't have time to go find out so, for now, I'm throwing this class around like confetti.
 	*/
+}
+
+figcaption {
+	padding-bottom: 25px;
+	background-color:#bfc5cc;
 }
 
 .foot {
@@ -147,3 +143,12 @@ header h2 {
 .bold {
 	font-weight: bold;
 }
+
+/*td {
+	background-color: #35557f;
+}
+
+td > a {
+	color: #68aaff;
+	background-color: #35557f;
+}*/
