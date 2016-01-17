@@ -81,10 +81,11 @@ main h3 {
 	height: 500px;
 }
 
-.code_snippet {
+code {
+	background-color: #c8c8c8;
 	color: maroon;
 	font-style: bold;
 	display: block;
-	padding: 5px 30px;
+	padding-right: 30px;
 	font-family: Arial;
 }

@@ -28,6 +28,7 @@
       
         <a href="index.html"><h2>Blog Archive</h2></a>
         <ul>
+          <li><a href="ruby-classes.html">Ruby Classes</a>: Let's be classy!</li>
           <li><a href="enumerable-methods.html">Enumerables</a>: And you thought you knew how to count</li>
           <li><a href="arrays-hashes.html">Arrays & Hashes</a>: Organization!</li>
           <li><a href="css-concepts.html">CSS: Margins, Borders & Padding</a>: How to make your stuff pretty</li>
@@ -64,9 +65,9 @@
 
         <p>
           After a few people have come by, your array might look like this:
-          <span class="code_snippet">
+          <code>
           visitors = ["Heather", "Will", "Cathleen"]
-          </span>
+          </code>
         </p>
 
         <p>
@@ -75,26 +76,26 @@
 
         <p>
           A hash for my information would look like this:
-          <span class="code_snippet">
-          {"first_name" => "Heather", "last_name" => "Conklin", "birthday" => "December 16"}</span>
+          <code>
+          {"first_name" => "Heather", "last_name" => "Conklin", "birthday" => "December 16"}</code>
           The beauty of the hash is that the relationships between the data points is so obvious. Clearly, my birthday is December 16. If the key <span class="ital">birthday</span> weren't right there, you might wonder what that date was all about. But that's not a problem with hashes. If you were looking at the information my sister input instead of me, the hash would be:
-          <span class="code_snippet">
+          <code>
           {"first_name" => "Cathleen", "last_name" => "Feduke", "birthday" => "May 7"}
-          </span>
+          </code>
         </p>
 
         <p>
           One important note here, the <span class="ital">keys</span> in a hash are unique. You can't have two <span class="ital">first_name</span> entries in the hash. <span class="ital">Values</span> can repeat though, so if my brother's name were "Will Will," his hash would be: 
-          <span class="code_snippet">
+          <code>
           {"first_name" => "Will", "last_name" => "Will", "birthday" => "June 1"}
-          </span>
+          </code>
         </p>
               
         <p>
           Now, here's where it gets really good (for someone like me who kind of wishes she owned a label-maker). Both <span class="bold">arrays</span> and <span class="bold">hashes</span> can hold anything. Strings, integers, <span class="ital">other arrays or hashes</span>, anything, even combinations of different types of things. So, if I wanted to keep track of all the people who've interacted with my <span class="ital">name_grabber</span> code, I might organize it like this:
-         <span class="code_snippet">
+         <code>
           visitors_hash = [{"first_name" => "Heather", "last_name" => "Conklin", "birthday" => "December 16"}, {"first_name" => "Cathleen", "last_name" => "Feduke", "birthday" => "May 7"}, {"first_name" => "Will", "last_name" => "Will", "birthday" => "June 1"}]
-        </span>
+        </code>
          Notice the different brackets: arrays use <span class="bold">[]</span> while hashes use <span class="bold">{}</span>.
         </p>
 
@@ -108,9 +109,9 @@
   
         <p>
           In this particular example, you might argue that an array of arrays would be equally efficient, since the three pieces of data I want are all the same and show up in the same order each time. If I wanted to, I could create an array of values for each visitor and build up an array made up of other arrays, like this:
-          <span class="code_snippet">
+          <code>
           visitors_array = [["Heather", "Conklin", "December 16"], ["Cathleen", "Feduke", "May 7"], ["Will", "Will", "June 1"]]
-          </span>
+          </code>
           Note that the keys are gone as are the "=>" markers. I could still iterate through these arrays, find "Cathleen" and return "May 7" for her birthday, based on that string's position in the array that starts with her name. 
         </p>
 
