@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Loops in JavaScript vs Ruby</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  </head>
+
+  <body>
+    <div class="links-banner">
+      <a class="banner-element" href="../index.html">HOME</a>     
+      <a class="banner-element" href="blog/index.html">BLOG</a>
+      <a class="banner-element" href="#">PORTFLIO</a>
+          <a class="banner-logo-link" href="https://github.com/heath3conk"><img class="banner-logo-link" alt="GitHub logo" src="../imgs/GitHub-Mark-32px.png"></a>
+          <a class="banner-logo-link" href="https://www.linkedin.com/in/heather-conklin-a1432b9"><img class="banner-logo-link" alt="Linked In logo" src="../imgs/In-White-28px-R.png"></a>
+          <a class="banner-logo-link" href="https://www.facebook.com/heather.conklin.754" title="Heather Conklin" target="_TOP"><img class="banner-logo-link" src="../imgs/FB-f-Logo__white_29.png"></a>
+          <a href="https://twitter.com/heathcait" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @heathcait</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div>
+   
+    <header>
+      <h1>Heather Conklin, CFP<sup>&reg;</sup></h1>
+      <h2>Web developer: finance-focused applications</h2>
+    </header>
+
+    <div class="blog-right">
+      
+        <a href="index.html"><h2>Blog Archive</h2></a>
+        <ul>
+          <li><a href="javascript.html">Looking at Loops in JavaScript and Ruby</a>: ... and over and over and over and ...</li>
+          <li><a href="ruby-classes.html">Ruby Classes</a>: Let's be classy!</li>
+          <li><a href="enumerable-methods.html">Enumerables</a>: And you thought you knew how to count</li>
+          <li><a href="arrays-hashes.html">Arrays & Hashes</a>: Organization!</li>
+          <li><a href="css-concepts.html">CSS: Margins, Borders & Padding</a></li>
+          <li><a href="git.html">Version Control & GitHub</a>: How to screw up everything you've done all week and not even want to kill yourself</li>
+        </ul>
+     
+    </div>
+    
+    <div class="blog-left">
+      
+        <h2>Looking at loops in JavaScript and Ruby</h2>
+        <h3>... and over and over and over and ...</h3>
+        <h4>January 22, 2016</h4>
+        <p>
+           It's interesting. I hadn't really considered until right now that we say we use
+           computers to automate things that we do over and over again. Computers do that kind
+           of repetition better than people do. They don't get bored of tired and they don't lose 
+           track of whether they're on repetition 89 or 90. 
+        </p>
+
+        <p>
+          The fact is though, we don't usually want to do <span class="ital">exactly</span> the same thing every time. More often, we want to do a thing multiple times to slightly different objects. Even incrementing a counter several times means that you're changing the value of the counter. If you didn't, you would only ever count to 1.
+        </p>
+
+        <p>
+          Most of the time, when you need to repeat instructions in a program, you'll use some kind of loop. Every kind of loop has some elements in common: 
+       </p>
+        
+        <p>
+          <span class="bold">Condition:</span> This is how the loop knows when to stop looping. The loop repeats as long as the condition is true and it stops as soon as the condition registers false. This means that a loop that has its condition at the <span class="ital">end</span> of the loop will execute at least once (before it even checks to see if the thing is true) and one with the condition at the <span class="ital">beginning</span> may not execute at all. 
+        </p>
+
+        <p>
+          Most conditionals are comparisons and, unless you want the loop to continue forever, you pretty much have to make one part of the comparison change somewhere in your code block. If you say you want to loop as long as 2 < 10, you'll be there for a while. But if you say you want to keep going until some variable <span class="bold">x</span> < 10 and the value of <span class="bold">x</span> changes somewhere inside the loop, then eventually you'll probably get to a point when <span class="bold">x</span> is equal to or greater than 10 and the loop will end. 
+        </p>
+
+        <p>
+          <span class="bold">Code block:</span> This is the part that you want to have happen more than once. It's the body of the loop and the reason for its existence. It could be anything. Maybe you have a list of names and you want to make sure the first letter of each one is capitalized. You can use a loop that starts with the first name on the list, capitalizes its first letter, puts it back in its place in the list and then moves on to the next name. If you've done it right, you finish the loop with all the names capitalized.
+        </p>
+
+        <p>
+          Here's how you would do this in JavaScript:
+          <pre><code>
+           1  var name_list = ["will", "heather", "cathleen", "carol"];
+           2 
+           3   for (var counter = 0; counter < name_list.length; counter++) {
+           4     var first_letter = name_list[counter].slice(0,1);
+           5     var other_letters = name_list[counter].slice(1);
+           6
+           7     var one_name_in_parts = [];
+           8     one_name_in_parts.push(first_letter.toUpperCase());
+           9     one_name_in_parts.push(other_letters);
+           10
+           11    name_list[counter] = one_name_in_parts.join("");
+           12  }
+           13
+           14  console.log(name_list);
+
+           => [ 'Will', 'Heather', 'Cathleen', 'Carol' ]
+          </code></pre>
+          Yes, I did make the JavaScript a <span class="ital">little</span> clunkier than it needed to be but (whine) JavaScript doesn't have some of the built-in goodies that Ruby has (just wait until you see how to do the same thing in Ruby). Also, since this blog is about loops, this code shows in <span class="ital">excrutiating</span> detail what's going on in the loop. 
+        </p>
+
+        <p>
+         Taking this bit of JavaScript from the beginning, line 1 gives us our list of names. Note that they're all lowercase at this point. 
+        </p>
+
+        <p>
+         Line 3 has a lot going on. I think of this as the control mechanism for the loop. Here, I create a new variable called <span class="bold">counter</span> and set it equal to zero. Then I set the <span class="bold">condition</span> for this loop, namely that it should continue as long as that counter is less than the length of our <span class="bold"> name_list.</span> Finally, that <span class="bold">counter++</span> adds one to the counter at the end of each time through the loop. 
+        </p>
+
+        <p>
+         Everything on lines 4 through 11 is the <span class="bold">code block</span> for this loop. I won't go through each line but I will give you an overview of what's happening in this block. I'll start by saying that we can't actually change the names in our list. Once we create a string, it's unchangeable. We can, however, take each one out, slice off the first letter and save it as a variable called <span class="bold">first_letter</span>, then save the other letters as another variable called, you guessed it, <span class="bold">other_letters</span>. Then we can replace the first letter with its uppercase version and put the parts together again. (Putting them together is what's going on there on lines 7 through 11.)
+        </p>
+
+        <p>
+         One good thing about lengthy code blocks is that you can usually tell where they begin and end by their <span class="bold">{}</span>. With a loop, that code block tells you all the stuff that will happen each time the loop executes. In this loop, the slice and recombination action happens to each of the names in the list. Line 14 prints the <span class="bold">name_list</span> to the terminal after we exit the loop. Note the capital letters on the names!
+        </p>
+
+        <p>
+         As I said earlier, I purposely made the code a bit more explicit than it has to be so you could see exactly what's going on in the loop. Having said that, loops in JavaScript, in my very limited experience, <span class="ital">are</span> more cumbersome than they are in Ruby. To demonstrate, here's all we'd need to do in Ruby to accomplish this:
+         <pre><code>
+          1  name_list = ["will", "heather", "cathleen", "carol"]
+          2
+          3  name_list.map! { |name| name.capitalize! }
+          4
+          5  puts name_list
+
+          =>  Will
+                Heather
+                Cathleen
+                Carol
+
+         </code></pre>
+        </p>
+
+        <p>
+        Neat, huh? So short and sweet (sigh). Everything that's going on with line 3 of the JavaScript loop, with the counter and the length of the list, all that is just <span class="ital">part</span> of the work that the <span class="bold">map!</span> method does in Ruby. <span class="bold">map!</span> also replaces the original content of our list with the modified version. The modification takes place between the {} as Ruby takes each name in the list and applies another built-in method to change it. That method, <span class="bold">capitalize!,</span> affects only the first letter of the name. (The <span class="bold">toUpperCase</span> method I used on line 8 of the JavaScript loop would change <span class="ital">all</span> the letters of the names, which is why we had to slice them up.)
+        </p>
+
+        <p>
+         There are other kinds of loops that I haven't described here. I thought it would be most useful to go through one type in detail. No matter which kind you use and no matter which language you're using, in order to loop effectively you have to know (1) how to do what you want to do, using built-in methods or slicing and dicing your way through the job and (2) how to represent when to start the loop and how many times to go through it. 
+        </p>
+      
+    </div>
+
+    <section class="foot">
+      <!--This is meant to be a footer, way at the bottom of the page
+    -->
+       <p>
+        <a href="https://github.com/heath3conk"><img alt="GitHub logo" src="../imgs/GitHub-Mark-32px.png"></a>
+        <a href="https://www.linkedin.com/in/heather-conklin-a1432b9"><img alt="Linked In logo" src="../imgs/In-2C-28px-R.png"></a>
+        <a href="https://www.facebook.com/heather.conklin.754" title="Heather Conklin" target="_TOP"><img src="../imgs/FB-f-Logo__blue_29.png"></a>
+        <a href="https://twitter.com/heathcait" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @heathcait</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
+      </p>
+      <p><a href="imgs/resume.pdf">Resume</a> </p>
+      <p><a href="mailto:heath3conk@gmail.com">Email me</a></p>
+    </section>
+  
+  </body>
+</html>
