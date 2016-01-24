@@ -1,0 +1,9 @@
+button {
+	font-variant: small-caps;
+	font-size: 40px;
+	/*float: right;*/
+	position: absolute;
+	color: #68aaff;
+	padding: 8px;
+	background-color: #35557f
+}
