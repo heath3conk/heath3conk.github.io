@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Functional Programming</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  </head>
+
+  <body>
+    <div class="links-banner">
+      <a class="banner-element" href="../index.html">HOME</a>     
+      <a class="banner-element" href="blog/index.html">BLOG</a>
+      <a class="banner-element" href="#">PORTFOLIO</a>
+          <a class="banner-logo-link" href="https://github.com/heath3conk"><img class="banner-logo-link" alt="GitHub logo" src="../imgs/GitHub-Mark-32px.png"></a>
+          <a class="banner-logo-link" href="https://www.linkedin.com/in/heather-conklin-a1432b9"><img class="banner-logo-link" alt="Linked In logo" src="../imgs/In-White-28px-R.png"></a>
+          <a class="banner-logo-link" href="https://www.facebook.com/heather.conklin.754" title="Heather Conklin" target="_TOP"><img class="banner-logo-link" src="../imgs/FB-f-Logo__white_29.png"></a>
+          <a href="https://twitter.com/heathcait" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @heathcait</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div>
+   
+    <header>
+      <h1>Heather Conklin, CFP<sup>&reg;</sup></h1>
+      <h2>Web developer: finance-focused applications</h2>
+    </header>
+
+    <div class="blog-right">
+      
+        <a href="index.html"><h2>Blog Archive</h2></a>
+        <ul>
+          <li><a href="functional-programming.html">Functional Programming</a>: Making simple things complex</li>
+          <li><a href="javascript.html">Looking at Loops in JavaScript and Ruby</a>: ... and over and over and over and ...</li>
+          <li><a href="ruby-classes.html">Ruby Classes</a>: Let's be classy!</li>
+          <li><a href="enumerable-methods.html">Enumerables</a>: And you thought you knew how to count</li>
+          <li><a href="arrays-hashes.html">Arrays & Hashes</a>: Organization!</li>
+          <li><a href="css-concepts.html">CSS: Margins, Borders & Padding</a>: How to make your stuff pretty</li>
+          <li><a href="git.html">Version Control & GitHub</a>: How to screw up everything you've done all week and not even want to kill yourself</li>
+        </ul>
+        <!-- This section should be scroll-able rather than just listing the last three
+        or four posts. Don't know how to do that yet.
+
+        It should also be located in a narrow-ish section on the right side of the page
+        next to the current blog post.
+
+        Besides the positioning, it'll have a different background color or texture
+        to differentiate it from the main content of this page.
+      -->
+     
+    </div>
+    
+    <div class="blog-left">
+      
+        <h2>Functional Programming</h2>
+        <h3>Making simple things complex</h3>
+        <h4>January 30, 2016</h4>
+        <p>
+           An hour or so ago, I didn't know anything about functional programming. Keep that in mind as you read the rest of this...it's not as if reading a few articles has made me an expert. Still, having read those articles, I know something about it and it seems like a concept that will perch on one side of my mind as I continue to learn about coding.
+        </p>
+
+        <p>
+           So, you're wondering what is this <span class="bold">functional programming</span> thing? I'm going to answer that in two parts. First, <span class="ital">why</span> should we care about functional programming and, second, <span class="ital">how</span> is it done.
+        </p>
+
+        <p>
+          The goals of functional programming are safer data and consistently excellent processes. According to this <a href="https://www.smashingmagazine.com/2014/07/dont-be-scared-of-functional-programming/">excellent article</a> on the subject, Facebook, Twitter and At&T use functional programing to handle aspects of their massive amounts of data and security. 
+        </p>
+
+        <p>
+          Functional programming isn't really about a specific programming languages, although there are languages that are more conducive to working this way. Most of the articles I've read use examples from JavaScript and Java and mentioned some languages that are more tailored to functional programming like Scala and Haskell.
+        </p>
+
+        <p>
+          There are apparently two fundamental rules of functional programming: 
+          <ul>
+            <li><span class="bold">No changing data.</span> If you have an array and you need to sort it, store the sorted array in a new spot. No overwriting the original array.</li>
+            <li><span class="bold">Past events can't influence current functions.</span> Each function has to operate every time as if it were the first time it's called. This keeps the operations consistent.</li>
+            <li>Another <a href="http://maryrosecook.com/blog/post/a-practical-introduction-to-functional-programming">article</a> I read combines these into one rule: <span class="bold">no side effects.</span> The author says, this code "doesn't rely on data outside the current function, and it doesn't change data that exists outside the current function."
+          </ul>
+        </p>
+
+        <p>
+ 		  Basically, you take every thing you have to do in your code and break it down into its smallest part and you do that part. Every function you create takes in some data as an argument and returns some data. Maybe you have to do a thing more than once but - forgot to mention this - you can't have loops in functional programming! Instead, you'd use recursion to get the job done. (That first <a href="https://www.smashingmagazine.com/2014/07/dont-be-scared-of-functional-programming/">article</a> goes through an example in detail.) You might also use built-in functions to accomplish this, like <span class="ital">map, reduce, filter, all, any,</span> and <span class="ital">find.</span>.
+        </p>
+
+        <p>
+          I've focused most of my effort so far on understanding how functional programming works, these rules it follows and I can see how breaking tasks into their smallest component operations as necessary can improve processes. Instead of finding a bug in a 1000-line block of code, you look for it in a 3-line block. Looking at the first rule, if you prohibit your code from changing underlying data, you never have to reconstruct your database if something goes wrong.
+        </p>
+
+        <p>
+ 		  From the code-maintenance perspective, smaller parts should be easier to understand. I could write a loop to start anywhere and go any number of times through a collection of data. When I use a built-in function like <span class="ital">map,</span> that function always works the same way. Anyone who reads my code would know what I'm doing without having to interpret how my mind works.
+        </p>
+
+        <p>
+          In general, functional programming seems to have advantages that would apply no matter waht type of program you're creating. It might also help me quit avoiding recursion, which would probably be a good thing.
+        </p>
+        
+      
+    </div>
+
+    <section class="foot">
+      
+       <p>
+        <a href="https://github.com/heath3conk"><img alt="GitHub logo" src="../imgs/GitHub-Mark-32px.png"></a>
+        <a href="https://www.linkedin.com/in/heather-conklin-a1432b9"><img alt="Linked In logo" src="../imgs/In-2C-28px-R.png"></a>
+        <a href="https://www.facebook.com/heather.conklin.754" title="Heather Conklin" target="_TOP"><img src="../imgs/FB-f-Logo__blue_29.png"></a>
+        <a href="https://twitter.com/heathcait" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @heathcait</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
+      </p>
+      <p><a href="imgs/resume.pdf">Resume</a> </p>
+      <p><a href="mailto:heath3conk@gmail.com">Email me</a></p>
+    </section>
+  
+      
+  </body>
+</html>
