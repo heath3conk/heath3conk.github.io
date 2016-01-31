@@ -1,6 +1,7 @@
 header {
 	height: 100px;
-	border-bottom: 3px #436d7f solid;
+	border-bottom: 3px #284015 solid;
+	text-align: center;
 }
 
 .blog-left {
@@ -8,25 +9,25 @@ header {
 	float: left;
 	width: 60%;
 	padding: 10px 25px 0px 20px;
-	border-right: 3px #436d7f double;
+	border-right: 3px #284015 double;
 	overflow: scroll;
 }
 
 .blog-left h2 {
 	font-size: 32px;
-	color: #3c5b7f;
+	color: #151540;
 	font-weight: bold;
 }
 
 .blog-left h3 {
 	font-size: 24px;
-	color: #3c5b7f;
+	color: #151540;
 	font-style: italic;
 }
 
 .blog-left h4 {
 	font-size: 18px;
-	color: #3c5b7f;
+	color: #151540;
 	font-weight: bold;
 }
 
@@ -42,12 +43,12 @@ header {
 .blog-right h2 {
 	font-size: 24px;
 	font-style: italic;
-	color: #3c5b7f;
+	color: #151540;
 }
 
 .blog-right a {
 	text-decoration: none;
-	color: #3c5b7f;
+	color: #151540;
 	font-size: 18px;
 }
 
@@ -57,19 +58,19 @@ body {
 
 main h1 {
 	font-size: 32px;
-	color: #436d7f;
+	color: #151540;
 	font-weight: bold;
 }
 
 main h2 {
 font-size: 24px;
-	color: #436d7f;
+	color: #151540;
 	font-style: italic;
 }
 
 main h3 {
 	font-size: 18px;
-	color: #436d7f;
+	color: #151540;
 	font-weight: bold;
 }
 
@@ -82,10 +83,14 @@ main h3 {
 }
 
 code {
-	background-color: #c8c8c8;
-	color: maroon;
+	background-color: #284015;
+	color: #e58e81;
 	font-style: bold;
 	display: block;
 	padding-right: 30px;
 	font-family: Arial;
+}
+
+table {
+	padding-right: 20px;
 }
