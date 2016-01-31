@@ -1,44 +1,46 @@
  
 * {
-/*	set background-color to one of the ones on the mood board (went with the fourth set of colors on the mood board)
-	set default font to one of the ones on the mood board (are none of these fonts available in my browser?!?)
-	*/
 	background-color: #fff9ef;
 	font-family: Source Sans Pro, sans-serif;
 }
 
-/*	set links in table (top of page) so they sit side-by-side
-	collectively take up the width of the page
-	have a different background color than the rest of the page
-	change color and/or size when hovered over
+/*	Overall color palette, inspired by william morris:
+	dark blue = #151540
+	  shades of #2a2a7f, #5454ff, #4b4be5
+	orangy-red = #7f1f0e
+	  shades of #ff3e1c, #401007, #e53819
+	lighter orangy-red = #e58e81
+	neutral background(cream) = fff9ef
+	olive green = #284015
+	  shades of #9fff7a, #457f3d, #8fe56f, #507f3e
 	*/
 .links-banner {
 	width: 100%;
-	color: #68aaff;
+	color: #e58e81;
 	padding: 4px;
-	background-color: #35557f;
+	background-color: #151540;
 	text-align: right;
 }
 
 .banner-element {
-	background-color: #35557f;
-	color: #68aaff;
+	background-color: #151540;
+	color: #ff9e8f;
 	font-size: 30px;
 	padding-right: 25px;
 }
 
 .banner-logo-link {
-	background-color: #35557f;
+	background-color: #151540;
 }
 
 
 a { 
 	text-decoration: none;
-	color: #35557f;
+	color: #151540;
 }
 
 a.hover {
-	color: red;
+	color: #7f1f0e;
 }
 
 header {
@@ -75,7 +77,7 @@ sup {
 }
 
 header h2 {
-	color: #35557f;
+	color: #151540;
 	font-style: italic;
 }
 
@@ -84,8 +86,8 @@ header h2 {
 	/*affects home page: moves stuff below headshot & name*/
 	margin: 10px;
 	padding: 20px;
-	border-top: 3px #436d7f solid;
-	border-bottom: 3px #436d7f solid;
+	border-top: 3px #284015 solid;
+	border-bottom: 3px #284015 solid;
 }
 
 .subheading {
@@ -100,8 +102,8 @@ header h2 {
 	since most of these elements are the same for both, it seemed more efficient to have one class that applied
 	to both rather than defining all the same things in the .left and .right classes, which really only need to
 	put things in the right spot */
-	background-color: #bfc5cc;
-	border: 2px #436d7f solid;
+	background-color: #507f3e;
+	border: 2px #284015 solid;
 	width: 40%;
 	display: inline-block;
 	padding: 20px;
@@ -118,7 +120,7 @@ header h2 {
 }
 
 .bg-color {
-	background-color: #bfc5cc;
+	background-color: #507f3e;
 /* 	There has GOT to be a better way to get this color inherited throughout these divs! I don't know how yet
 	and I don't have time to go find out so, for now, I'm throwing this class around like confetti.
 	*/
@@ -126,12 +128,12 @@ header h2 {
 
 figcaption {
 	padding-bottom: 25px;
-	background-color:#bfc5cc;
+	background-color: #507f3e;
 }
 
 .foot {
 	clear: both;
-	border-top: 3px #436d7f solid;
+	border-top: 3px #284015 solid;
 	text-align: center;
 	/*background-color: #35557f;*/
 }
@@ -143,12 +145,3 @@ figcaption {
 .bold {
 	font-weight: bold;
 }
-
-/*td {
-	background-color: #35557f;
-}
-
-td > a {
-	color: #68aaff;
-	background-color: #35557f;
-}*/

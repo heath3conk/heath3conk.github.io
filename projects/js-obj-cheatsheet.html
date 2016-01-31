@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>JS Object Cheatsheet</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  </head>
+
+  <body>
+    <div class="links-banner">
+      <a class="banner-element" href="../index.html">HOME</a>     
+      <a class="banner-element" href="../blog/index.html">BLOG</a>
+      <a class="banner-element" href="index.html">PORTFOLIO</a>
+          <a class="banner-logo-link" href="https://github.com/heath3conk"><img class="banner-logo-link" alt="GitHub logo" src="../imgs/GitHub-Mark-Light-32px.png"></a>
+          <a class="banner-logo-link" href="https://www.linkedin.com/in/heather-conklin-a1432b9"><img class="banner-logo-link" alt="Linked In logo" src="../imgs/In-White-28px-R.png"></a>
+          <a class="banner-logo-link" href="https://www.facebook.com/heather.conklin.754" title="Heather Conklin" target="_TOP"><img class="banner-logo-link" src="../imgs/FB-f-Logo__white_29.png"></a>
+          <a href="https://twitter.com/heathcait" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @heathcait</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div>
+   
+    <header>
+      <h1>JavaScript Objects Cheatsheet</h1>
+    </header>
+
+    <table>
+      <tr>
+        <td> 
+        <pre><code>
+        1   var name = "Heather";
+        </code></pre>
+        </td>
+
+    	<td>
+          Objects can be simple variables.
+        </td>
+      </tr>
+   
+      <tr>
+        <td>
+        <pre><code>
+         1  var meals = {
+         2    breakfast: {
+         3      baked_goods: ["toast", "muffin", "coffee cake"],
+         4      cereal: ["granola", "Capn Crunch"],
+         5      griddle: ["pancakes", "french toast", "hash browns"],
+         6      eggs: ["scrambled", "over easy", "quiche"]
+         7    },
+         8    lunch: {
+         9      sandwiches: ["PB&J", "roast beef", "tuna salad"],
+        10      soup: ["tomato", "chicken curry", "chili", "beef stew"],
+        11      salad: ["chopped", "greens only", "everything in the garden"]
+        12    }
+        13  };
+        </code></pre>
+        </td>
+
+        <td>
+          <p>
+          Objects can also hold other objects and/or functions. The properties inside the object are separated by commas. The property names can be formatted like symbols in Ruby, without quotes and followed by a colon, as is <span class="ital">breakfast:</span> on line 2 and <span class="ital">soup</span> on line 10.
+          </p>
+          <p>
+          The properties and their values function like key/value pairs in a Ruby hash.
+          </p> 
+      	</td>
+      </tr>
+
+      <tr>
+        <td>
+        <pre><code>
+        14  meals.dinner = {};
+        15  meals.dinner.entrees = ["roast chicken", "meatloaf", "pork chops", "veggie lasagne"];
+        16
+        17  console.log(meals.dinner);
+
+         => { entrees: [ 'roast chicken', 'meatloaf', 'pork chops', 'veggie lasagne' ] }
+
+        </code></pre>
+        </td>
+
+        <td>
+          The <span class="ital">meals</span> object contains properties that are themselves objects. To add another one first requires that you show it is an object and give it a name (line 1). Then you can provide the new <span class="ital">entrees</span> properties its own value (line 2).
+      	</td>
+      </tr>
+
+      <tr>
+        <td>
+        <pre><code>
+        18  console.log(meals["breakfast"]["baked_goods"][1]);
+        19  console.log(meals.breakfast.baked_goods[1]);
+        20  console.log(meals[breakfast][baked_goods][1]);
+
+         =>  muffin
+         =>  muffin
+         =>  ReferenceError: breakfast is not defined
+         </code></pre>
+         </td>
+
+         <td>
+         <p>
+         The first two lines are valid ways to access entries in a object. Either the bracket notation on line or the dot notation on line 2 work fine. Both print the value <span class="ital">muffin</span> to the screen.
+         </p>
+
+         <p>
+         The third line raises an error that <span class="ital">breakfast</span> is not defined. (It would raise the same error for <span class="ital">baked_goods,</span> if it got that far.)
+         </p>
+    </table>
+
+    
+
+    <section class="foot">
+     <p>
+        <a href="https://github.com/heath3conk"><img alt="GitHub logo" src="../imgs/GitHub-Mark-32px.png"></a>
+        <a href="https://www.linkedin.com/in/heather-conklin-a1432b9"><img alt="Linked In logo" src="../imgs/In-2C-28px-R.png"></a>
+        <a href="https://www.facebook.com/heather.conklin.754" title="Heather Conklin" target="_TOP"><img src="../imgs/FB-f-Logo__blue_29.png"></a>
+        <a href="https://twitter.com/heathcait" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @heathcait</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
+      </p>
+      <p><a href="imgs/resume.pdf">Resume</a> </p>
+      <p><a href="mailto:heath3conk@gmail.com">Email me</a></p>
+    </section>
+    
+    <section>
+      <p><a href="../imgs/cheat_sheet_wireframe.png">This</a> is what my wireframe looks like.</p>
+    </section>
+
+
+  </body>
+</html>
+<!-- 
+What content was solidified in the process of completing this challenge?
+	The main part of objects I've been struggling with this week is calling them up with
+	dot and/or bracket notation. I wanted to play around with that in a simplified way so I 
+	could see what happened when I tried the various notation over the same object. I feel 
+	more comfortable with getting the values I'm looking for as well as adding properties
+	and values to an object.
+
+What content do you feel a bit fuzzy on still?
+	I purposely didn't go too deeply into objects because I was trying to get really clear
+	on just a couple of aspects of them. There are a lot of parts of JavaScript that are
+	stil a bit fuzzy to me.
+
+What was the most difficult part of this challenge?
+	Time boxing! I got part way into the cheat sheet and decided I didn't like how my 
+	code blocks looked. That lead to 90 minutes of fooling around with colors across my
+	entire site. I do like the look better but it was time spent on window-dressing 
+	rather than content.
+
+Has your ability to add CSS to format and position objects improved since week 3?
+	Definitely! I did this challenge over two days and, after leaving it alone for a 
+	couple of hours after the first part, I realized that I just needed to use a table to 
+	make it look the way I wanted it. Implementing that was simple. So I'm getting better
+	at identifying how to achieve what I want without spending too much time spinning my
+	wheels.
+
+	The instructions say to create a custom CSS file for this and I did that but I was just 
+	repeating thngs that were on my blog stylesheet. In the end, I got rid of the new
+	stylesheet and just referenced the one for my blog.
+ -->
