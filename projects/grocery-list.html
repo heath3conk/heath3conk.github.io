@@ -2,16 +2,19 @@
 <html>
 
   <head>
-    <title>Heather Conklin Portfolio</title>
+    <title>Simple Grocery List</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/grocery-list.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="grocery_list.js"></script>
   </head>
 
   <body>
     <div class="links-banner">
       <a class="banner-element" href="../index.html">HOME</a>     
       <a class="banner-element" href="../blog/index.html">BLOG</a>
+      <a class="banner-element" href="index.html">PORTFOLIO</a>
 
           <a class="banner-logo-link" href="https://github.com/heath3conk"><img class="banner-logo-link" alt="GitHub logo" src="../imgs/GitHub-Mark-Light-32px.png"></a>
           <a class="banner-logo-link" href="https://www.linkedin.com/in/heather-conklin-a1432b9"><img class="banner-logo-link" alt="Linked In logo" src="../imgs/In-White-28px-R.png"></a>
@@ -20,23 +23,51 @@
     </div>
     
      <header>
-      <h1>Heather Conklin, CFP<sup>&reg;</sup></h1>
-      <h2>Web developer: finance-focused applications</h2>
+      <h1>Grocery List Builder</h1>
     </header>
 
-    <section class="archive-list">      
-        <a href="index.html"><h2>Portfolio</h2></a>
-        <ul>
-          
-          <li><a href="js-obj-cheatsheet.html">JavaScript Object Cheat Sheet</a>: DBC week 8 solo challenge</li>
-          <li><a href="grocery-list.html">Grocery List Builder</a>: Work in progress</li>
-         
-          <li><a href="hangman.html">Hangman Game</a>: Work in progress</li>
-         
-        </ul>
-        <!-- This section should be scroll-able rather than just listing the last three or four posts. Don't know how to do that yet.
-      -->
-     
+    <section class="add_items">
+      <form id="add_form" action="" method="get"> 
+      <!-- <fieldset> -->
+        <input type="text" name="item_name"/>
+        <input type="text" name="quantity"/>
+        <input type="text" name="units"/>
+        <select name="categories">
+          <option value="beverages">Beverages</option>
+          <option value="bakery">Bread & Bakery Items</option>
+          <option value="canned_goods">Canned Goods</option>
+          <option value="baking_supplies">Baking Supplies & Spices</option>
+          <option value="meat">Meat</option>  
+          <option value="produce">Fruits & Vegetables</option>
+          <option value="paper">Paper Goods</option>
+          <option value="cleaners">Cleaners</option>
+          <option value="personal_care">Personal Care</option>
+          <option value="other">Other</option>
+        </select>
+        <input type="submit" value="Add item" class="add"/>
+        <!-- </fieldset> -->
+      </form>
+    </section>
+
+    <section>
+      <table>
+        <thead>
+          <th class="item">ITEM</th>
+          <th class="quantity">QUANTITY</th>
+          <th class="units">UNITS</th>
+          <th class="categories">CATEGORY</th>
+          <th class="actions"></th> <!-- No label on this column where the action buttons go -->
+        </thead>
+        <tbody class="list">
+        <tr>
+          <td>test</td>
+          <td>test</td>
+          <td>test</td>
+          <td>test</td>
+          <td></td>
+        </tr>
+        </tbody>
+      </table>
     </section>
     
     <section class="foot">
