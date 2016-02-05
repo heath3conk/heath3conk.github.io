@@ -1,0 +1,59 @@
+header {
+	height: 50px;
+	border-bottom: 3px #284015 solid;
+	text-align: center;
+}
+
+body {
+	padding: 10px;
+}
+
+.add {  /* this is the button */
+	color: #e58e81;
+	width: 100px;
+	background: #284015;
+	box-shadow: inset 0 0 6px #8fe56f;
+}
+
+form input {
+	margin: 10px;
+	height: 30px;
+	width: 200px;
+	font-size: 15px;
+	color: #284015;
+}
+
+form select {
+	height: 30px;
+	width: 200px;
+	font-size: 15px;
+	padding: 2px 5px 2px 5px;
+	color: #284015;
+}
+
+th {  /* hopefully will set size for rows & columns below the header row too */
+	height: 25px;
+	width: 150px;
+	padding: 2px 5px 2px 5px;
+	border-bottom: 2px #284015 dotted;
+}
+
+.actions {  /* column in table that has buttons */
+	width: 400px;
+}
+
+.update_quantity {
+	color: #e58e81;
+	height: 30px;
+	width: 150px;
+	background: #284015;
+	box-shadow: inset 0 0 6px #8fe56f;
+}
+
+.rmv_item {
+	color: #e58e81;
+	height: 30px;
+	width: 115px;
+	background: #284015;
+	box-shadow: inset 0 0 6px #8fe56f;
+}
