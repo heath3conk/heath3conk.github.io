@@ -88,13 +88,11 @@ header h2 {
 	padding: 20px;
 	border-top: 3px #284015 solid;
 	border-bottom: 3px #284015 solid;
+	font-size: 2em;
 }
 
 .subheading {
-/*	set up smaller font size for tags in subsections
-	affects index.html
-*/
-	font-size: 1em;
+	font-size: 2em;
 }
 
 .my-work {
@@ -135,6 +133,7 @@ figcaption {
 	clear: both;
 	border-top: 3px #284015 solid;
 	text-align: center;
+	padding-top: 10px;
 	/*background-color: #35557f;*/
 }
 
