@@ -1,0 +1,27 @@
+<div class="blog">
+      
+  <p>
+    So, since I'm pretty new to this coding thing, I was really happy that this week's challenges were basically about making me feel like I could jump in and hack away without worrying that I might break the whole internet.
+  </p>
+  <p>
+    The whole idea of version control gives me a lovely sense of security. I can work at something until I get it functioning the way I want it to, save it in that state, and then keep fiddling with it knowing that if my later work introduces errors, I can always go back to that earlier, WORKING version, and start fresh. Also, starting fresh might actually be my last resort since I'll be able to see exactly what I've changed between that older version and the newer, buggy one.         
+  </p>
+  <p>
+    I'm thinking of this as putting a copy of the work up on a high shelf somewhere (that's the commit and push to GitHub) and then pulling a ghost copy of it off that shelf to work on. I can do what I want with the ghost copy (my new branch) without having any impact on the master up there on the shelf until I decide I'm ready to merge the two.
+  </p>
+  <p>
+    Git lets me create that ghost copy by making a new branch, which is just a exact duplicate of the original work (the master), then I can add directories and/or files, make changes to the what was already there or whatever. I save those changes locally and get them ready to save copy to the master copy out in the cloud on GitHub.
+  </p>
+  <p>
+    There's a multi-step process to get from two versions of the work back to one. First I have to use git add to "stage" my changes. Entering git status lets me see a list of the things that are ready to go. Once I'm satisfied that I've got them all, enter git commit -m "commit message" to save the lot of them.
+  </p>
+  <p>
+    At this point, I've saved changes locally but not back up to GitHub, where my full working copy lives. Now I have to git push origin branch_name to make that happen. (Note to self: remember the name of the branch you created! It was a while ago so make that name something logical or bloody write it down!)
+  </p>
+  <p>
+    I should be able to see my new branch on GitHub available to pull. I can create a new pull request, compare my updated work to the master and merge the two back into one, updated version. Storing my code on GitHub allows others to view it and even edit it and also ensures that there's a clean copy of it, including a record of past changes, somewhere other than my own hard drive. 
+  </p>
+  <p>
+    Ahhh, peace of mind. :)
+  </p>
+</div>

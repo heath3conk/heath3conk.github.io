@@ -1,0 +1,33 @@
+<div class="blog-left">
+  <p>
+    The word <span class="bold">enumerate</span> is (according to Google) a verb with two definitions: to "mention (a number of things) one by one" and to "establish the number of". 
+  </p>
+
+  <p>
+    There are lots of occasions when you might want to count things. Maybe you've been building a grocery list for a recent guided pairing session and you want to know how many items you have on the list. If your list is in an array or a hash, you can call the <span class="ital">length</span> method and find out. (Not the <span class="ital">count</span> method, that does something else, also thanks to Enumerable.)
+  </p>
+
+  <p>
+    In fact, you can do lots of things with enumerables, such as <span class="ital">count</span> (duh), <span class="ital">sort, inject,</span> find the <span class="ital">max</span> or <span class="ital">min,</span> etc. My favorite, based on the method's name alone, is <span class="ital">lazy.</span>
+  </p>
+
+  <p>
+    Remember the definitions I copied from Google three paragraphs ago? They really encapsulate the key aspects of enumerables in Ruby. That is, you use enumerables to count things. Also, by implication, you can only use them to count things that <span class="ital">can be counted.</span> 
+  </p>
+
+  <p>
+    That second point may seem obvious but it could still trip you up in practice, if you tried to enumerate over something that is infinitely large. And the things that are potentially infinite are not necessarily obvious. For example, if you create a range that has a float as its starting point, there are an infinite number of floats between one number and another (just add places after the decimal), so you can't really count the elements in that range or do any other enumerable method on it without raising an error. The problem is that enumerable methods are generally "eager," which means that they want to look at everything in your array or hash or whatever before they give you an answer.
+  </p>
+
+  <p>
+    This is where you can get <span class="ital">lazy.</span> If you really wanted to enumerate over an un-countable thing, or if you thought some counting method you've built might someday encounter an un-countable thing and you wanted it to do something other than raise an error, you could call your counting methods in a chain with the <span class="ital">lazy</span> method.
+  </p>
+
+  <p>
+    You could then inlcude specific cases in your method definition to produce the result you want when your method gets called by something infinite. For example, <span class="ital">map</span> is a method that would fail when confronted with an infinite array. Then, when you hit that collection_of_infinite_things, you can still map it by calling <span class="code_snippet">collection_of_infinite_things.lazy.map</span> and it will map however many elements of that collection you had set it to do.
+  </p>
+
+  <p>
+    Here's a really good <a href= "http://patshaughnessy.net/2013/4/3/ruby-2-0-works-hard-so-you-can-be-lazy">article</a> I found that describes <span class="ital">lazy</span> as well as more general info related to enumerables. It's also a good reminder that Ruby is still evolving. <span class="ital">Lazy</span> apparently didn't exist in Ruby until version 2.0.
+  </p>
+</div>

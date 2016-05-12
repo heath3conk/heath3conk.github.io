@@ -1,0 +1,45 @@
+<div class="blog-left">
+
+  <p>
+    An hour or so ago, I didn't know anything about functional programming. Keep that in mind as you read the rest of this...it's not as if reading a few articles has made me an expert. Still, having read those articles, I know something about it and it seems like a concept that will perch on one side of my mind as I continue to learn about coding.
+  </p>
+
+  <p>
+    So, you're wondering what is this <span class="bold">functional programming</span> thing? I'm going to answer that in two parts. First, <span class="ital">why</span> should we care about functional programming and, second, <span class="ital">how</span> is it done.
+  </p>
+
+  <p>
+    The goals of functional programming are safer data and consistently excellent processes. According to this <a href="https://www.smashingmagazine.com/2014/07/dont-be-scared-of-functional-programming/">excellent article</a> on the subject, Facebook, Twitter and At&T use functional programing to handle aspects of their massive amounts of data and security. 
+  </p>
+
+  <p>
+    Functional programming isn't really about a specific programming languages, although there are languages that are more conducive to working this way. Most of the articles I've read use examples from JavaScript and Java and mentioned some languages that are more tailored to functional programming like Scala and Haskell.
+  </p>
+
+  <p>
+    There are apparently two fundamental rules of functional programming: 
+    <ul>
+      <li><span class="bold">No changing data.</span> If you have an array and you need to sort it, store the sorted array in a new spot. No overwriting the original array.</li>
+      <li><span class="bold">Past events can't influence current functions.</span> Each function has to operate every time as if it were the first time it's called. This keeps the operations consistent.</li>
+      <li>Another <a href="http://maryrosecook.com/blog/post/a-practical-introduction-to-functional-programming">article</a> I read combines these into one rule: <span class="bold">no side effects.</span> The author says, this code "doesn't rely on data outside the current function, and it doesn't change data that exists outside the current function."</li>
+    </ul>
+  </p>
+
+  <p>
+    Basically, you take every thing you have to do in your code and break it down into its smallest part and you do that part. Every function you create takes in some data as an argument and returns some data. Maybe you have to do a thing more than once but - forgot to mention this - you can't have loops in functional programming! Instead, you'd use recursion to get the job done. (That first <a href="https://www.smashingmagazine.com/2014/07/dont-be-scared-of-functional-programming/">article</a> goes through an example in detail.) You might also use built-in functions to accomplish this, like <span class="ital">map, reduce, filter, all, any,</span> and <span class="ital">find.</span>.
+  </p>
+
+  <p>
+    I've focused most of my effort so far on understanding how functional programming works, these rules it follows and I can see how breaking tasks into their smallest component operations as necessary can improve processes. Instead of finding a bug in a 1000-line block of code, you look for it in a 3-line block. Looking at the first rule, if you prohibit your code from changing underlying data, you never have to reconstruct your database if something goes wrong.
+  </p>
+
+  <p>
+    From the code-maintenance perspective, smaller parts should be easier to understand. I could write a loop to start anywhere and go any number of times through a collection of data. When I use a built-in function like <span class="ital">map,</span> that function always works the same way. Anyone who reads my code would know what I'm doing without having to interpret how my mind works.
+  </p>
+
+  <p>
+    In general, functional programming seems to have advantages that would apply no matter what type of program you're creating. It might also help me quit avoiding recursion, which would probably be a good thing.
+  </p>
+
+
+</div>
