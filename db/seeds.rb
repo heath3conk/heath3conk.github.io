@@ -1,0 +1,10 @@
+User.create!(first_name: "Heather", last_name: "Conklin", role: "admin", email: "heath3conk@gmail.com", password: "C)nk4dm1n")
+Blog.create!(title: "Version Control & GitHub", subtitle: "How to screw up everything you've done all week and not even want to kill yourself", partial_name: "_github.erb", original_date: "December 4, 2015", author_id: User.first.id)
+Blog.create!(title: "CSS: Margins, Borders & Padding", subtitle: "How to make stuff pretty", partial_name: "_css_concepts.erb", original_date: "December 21, 2015", author_id: User.first.id)
+Blog.create!(title: "Arrays & Hashes", subtitle: "Organization!", partial_name: "_arrays_hashes.erb", original_date: "January 3, 2016", author_id: User.first.id)
+Blog.create!(title: "Enumerables", subtitle: "And you thought you knew how to count", partial_name: "_enumerables.erb", original_date: "January 9, 2016", author_id: User.first.id)
+Blog.create!(title: "Ruby classes", subtitle: "Let's be classy!", partial_name: "_ruby_classes.erb", original_date: "January 17, 2016", author_id: User.first.id)
+Blog.create!(title: "Looking at loops in JavaScript and Ruby", subtitle: "...and over and over and over and...", partial_name: "_loops.erb", original_date: "January 22, 2016", author_id: User.first.id)
+Blog.create!(title: "Functional Programming", subtitle: "Making simple things complex", partial_name: "_functional_programming.erb", original_date: "January 30, 2016", author_id: User.first.id)
+
+Project.create!(title: "Good Day Mate", short_description: "Capstone project at DevBootcamp. In eight days, our four-person team produced a mobile-first app using React.js. Our goal was to create a way to reflect on the day just finished, express gratitude and anticipate good things for the following day. Users set up a stream of things to see/do to begin their day. In the morning, they review their entries of the previous night and dive into the customized stream they had created, maybe reading headlines, listening to a podcast or seeing a truly terrible geeky joke. Best viewed on mobile devices.", url: "gdm2.heroku.com", creator_id: User.first.id)
