@@ -1,0 +1,74 @@
+<div class="blog-left">
+  
+  <p>
+    Ruby is an "object-oriented" language. That means that it's organized in terms of objects. It's not very mysterious. An object in Ruby can be like an object in the real world, such as a car or a house. Objects can also be abstract, like arrays. 
+  </p>
+
+  <p>
+    A <span class="bold">class</span> is a kind of object in Ruby. At its most basic, a class is just a set of descriptions and actions that are common to one kind of thing. Ruby has a bunch of built-in classes, like Array, string, etc. and you can also build your own classes. To illustrate what it means to be a class, I'm going to build one here and since I was just getting myself a drink of water, my class will be called Glass.
+  </p>
+
+  <p>
+    Defining a class requires some basic structure. You start with a <span class="ital">class</span> line, in which the name of your class is capitalized, and end with <span class="ital">end</span>:
+    <pre><code>
+    class Glass
+      ...some stuff about the class 
+    end
+    </code></pre>
+  </p>
+
+  <p>
+    All the information about the class goes in that one block. It could be just a few things or it could be hundreds of lines of code. Ideally, anything I want to say about Glasses will go in this class definition. I'll be including things in the class that are both descriptive - these refer to the <span class="ital">state</span> of a particular Glass - and actions I can take on a Glass - these would be the <span class="ital">methods</span> I can call on it.
+  </p>
+
+  <p>
+    Many classes include an explicit way to establish a new instance of themselves. Here, I'm going to create a new Glass by stating the type of beverage I want to drink:
+    <pre><code>
+      def initialize(beverage)
+        @beverage = beverage
+        raise ArgumentError, "please tell me what you want to drink!" unless beverage.is_a?(String)
+      end
+    </code></pre>
+  </p>
+  <p>
+    All that <span class="ital">initialize</span> method is doing is reading the type of beverage and storing it in an <span class="bold">instance variable.</span> Instance variable are identifiable by the @ at the beginning of their name. You use them when you need to be able to access a value across several different methods...as we need to do here. I can also complain (raise an error) if you try to instantiate a glass with an unacceptable argument. In this case, I'm only checking to make sure you give me a string, but I could have gotten picky and decided to only accept certain types of beverages so that if you tried to make a glass to hold, say, dirt, I'd object. For now, though, I'm not going to be that picky. With this method in place, we can create an instance of a Glass by saying:
+  </p>
+  <pre><code>
+    my_glass = Glass.new("juice")
+  </code></pre>
+  
+  <p>
+    Now I want to do something with my_glass. Usually, that means putting some kind of liquid into it for the drinking so I'm going to have a method for filling it that will tell me what I need in order to make that happen:
+  </p>
+
+  <pre><code>
+    def fill
+      if @beverage == "wine"
+        puts "Get the corkscrew."
+      elsif @beverage == "juice"
+        puts "Open the carton."
+      elsif @beverage == "milk"
+        puts "Get some cookies."
+      else
+        puts "Pour water."
+      end
+    end
+  </code></pre>
+
+  <p>
+    Here you can see the instance variable in action. I can call the <span class="ital">fill</span> method and get a response without having to re-state what I want to drink because this method looks at the value stored in the <span class="ital">@beverage</span> instance variable. To call this method on my_glass, I would just do:
+  </p>
+
+   <pre><code>
+    my_glass.fill
+  </code></pre>
+
+  <p>
+    I could have loads of other methods in my Glass class. Maybe my wine glasses are delicate and need to be hand-washed. I could have a <span class="ital">wash</span> method that gives instructions for washing my_glass. Or maybe I need to keep track of how much water I'm drinking in a day. I could have a method that counts the number of times I fill a water glass. I could create a method called <span class="ital">drink</span> that removes some of the liquid in the glass every time I run it and then another that checks whether my_glass is <span class="ital">half_full?</span> (or <span class="ital">half_empty?</span> depending on my general outlook on life). 
+  </p>
+
+  <p>
+    The point is, I could keep coming up with new actions to take with a Glass and adding methods to my Glass class. If I made this class today and decide next month that I need to know what kinds of Glasses are best for eavesdropping through doors (hint: not wine glasses), I can put a new method in there and all the glasses I've initialized between now and then would be able to access that method. 
+  </p>
+
+</div>
