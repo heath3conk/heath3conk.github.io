@@ -7,32 +7,32 @@
 
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,600italic' rel='stylesheet' type='text/css'>
 
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
   <script src="/js/application.js"></script>
 
   <title>Heather Conklin</title>
 </head>
 
-  <div id="nav-container">
-    <nav>
-      <ul>
-        <li class="nav"><a href="/blogs/index">BLOG</a></li>
-        <li class="nav"><a href="/projects/index">PORTFOLIO</a></li>
-        <li class="nav"><a href="https://github.com/heath3conk"><img alt="GitHub logo" src="../public/images/GitHub-Mark-Light-32px.png"></a></li>
-        <li class="nav"><a href="https://www.linkedin.com/in/heathercconklin"><img alt="Linked In logo" src="../public/images/In-White-28px-R.png"></a></li>
-      </ul>
-    </nav>
+  <div class="row">
+    <div class="col s9 nav"><a class="nav-link" href="/blogs/index">BLOG</a></div>
+    <div class="col s2 nav"><a class="nav-link" href="/projects/index">PORTFOLIO</a></div>
+    <div class="col s1 valign-wrapper nav"><a class="valign nav-link" href="https://github.com/heath3conk"><img alt="GitHub logo" src="images/GitHub-Mark-Light-32px.png"></a><a class="valign nav-link" href="https://www.linkedin.com/in/heathercconklin"><img alt="Linked In logo" src="images/In-White-28px-R.png"></a></div>
   </div>  
 
   <body>
     <%= yield %>
   </body>
 
-  <section id="foot-container">
-    <ul>
-      <li><a href="../public/images/HeatherConklinResume.pdf">Resume</a></li>
-      <li><a href="mailto:heath3conk@gmail.com">Email me</a></li>
-    </ul>
-  </section>
+  <div class="row foot">
+    <div class="col s12 center-align"><a class="foot-link" href="images/HeatherConklinResume.pdf">Resume</a></div>
+    <div class="col s12 center-align"><a class="foot-link" href="mailto:heath3conk@gmail.com">Email me</a></div>
+  </div>
 
 </html>

@@ -1,4 +1,4 @@
- * {
+ body {
   background-color: #fff9ef;
   font-family: Source Sans Pro, sans-serif;
 }
@@ -13,3 +13,27 @@
   olive green = #284015
     shades of #9fff7a, #457f3d, #8fe56f, #507f3e
   */
+
+.nav {
+  background-color: #151540;
+  color: #e58e81;
+  font-size: 30px;
+  text-align: right;
+  height: 50px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #e58e81;
+  padding: 5px;
+}
+
+.foot {
+  border-top: 2px solid #151540;
+}
+
+.foot-link {
+  font-size: 25px;
+  color: #151540;
+  text-decoration: none;
+}

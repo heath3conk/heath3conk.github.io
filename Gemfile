@@ -17,6 +17,7 @@ gem 'rake'
 
 gem 'shotgun'
 gem 'bcrypt'
+gem 'materialize-sass'
 
 group :test do
   gem 'faker'
