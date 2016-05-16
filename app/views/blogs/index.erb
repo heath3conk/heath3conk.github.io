@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Blog Archive</h1>
+  <ul>
+    <% @blogs.reverse.each do |blog| %>
+      <li>
+        <a href="/blogs/<%= blog.id %>"  class="blog-title"><%= blog.title %></a>
+        <p class="blog-sub"><%= blog.subtitle %></p>
+        <p class="blog-date"><%= blog.original_date %></p>
+  
+    <% end %>
+  </ul>
+</div>
